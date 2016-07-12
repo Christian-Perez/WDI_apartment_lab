@@ -7,9 +7,14 @@ class Tenant
     @gender = gender
   end
 
-  # def full_name
-  #   @fullname = "#{@f_name} #{@l_name} aka #{@nickname}"
-  # end
+  def full_name
+    if nickname then
+      @fullname = "#{@f_name} '#{@nickname}' #{@l_name}"
+    else
+      @fullname = "#{@f_name} #{@l_name}"
+    end
+
+  end
 
   def nickname
     @nickname
