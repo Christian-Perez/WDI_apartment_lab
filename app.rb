@@ -12,4 +12,5 @@ a1 = Apartment.new("B", 2, 1)
 # puts a1.studio?
 a1.move_in
 a1.move_in
-puts a1.tenants
+# puts a1.tenants
+puts a1.full?

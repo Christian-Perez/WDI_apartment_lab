@@ -23,4 +23,10 @@ class Apartment
     new_tenant = gets.chomp
     @tenants.push(new_tenant)
   end
+  def empty?
+    @tenants.length < 1 ? true : false
+  end
+  def full?
+    @tenants.length == num_beds ? true : false
+  end
 end
