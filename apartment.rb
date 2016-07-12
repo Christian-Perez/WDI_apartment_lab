@@ -11,4 +11,11 @@ class Apartment
   def price
     "$#{@price}"
   end
+  def studio?
+    if @num_beds == 1
+      true
+    else
+      false
+    end
+  end
 end
