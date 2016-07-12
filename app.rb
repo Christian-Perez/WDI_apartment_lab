@@ -9,4 +9,4 @@ tenant = Tenant.new "Jojo", "Arangutan", "march 1, 2002", "male"
 
 
 a1 = Apartment.new("B", 2, 1, ['jo', 'kim'])
-puts a1.num_baths
+puts a1.price
