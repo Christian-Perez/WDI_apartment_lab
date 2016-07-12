@@ -1,7 +1,7 @@
 class Apartment
   attr_accessor :unit, :num_beds, :num_baths, :tenants
   attr_reader :price
-  def initialize unit, num_beds, num_baths, tenants
+  def initialize unit, num_beds, num_baths, tenants=[]
     @unit = unit
     @num_beds = num_beds
     @num_baths = num_baths
@@ -17,5 +17,10 @@ class Apartment
     else
       false
     end
+  end
+  def move_in
+    p "who's moving in?"
+    new_tenant = gets.chomp
+    @tenants.push(new_tenant)
   end
 end

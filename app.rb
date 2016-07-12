@@ -8,5 +8,8 @@ tenant = Tenant.new "Jojo", "Arangutan", "march 1, 2002", "male"
 # puts tenant
 
 
-a1 = Apartment.new("B", 2, 1, ['jo', 'kim'])
-puts a1.studio?
+a1 = Apartment.new("B", 2, 1)
+# puts a1.studio?
+a1.move_in
+a1.move_in
+puts a1.tenants
