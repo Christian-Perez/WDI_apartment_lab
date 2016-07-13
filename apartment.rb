@@ -21,7 +21,11 @@ class Apartment
   def move_in
     p "who's moving in?"
     new_tenant = gets.chomp
-    @tenants.push(new_tenant)
+    if !full? then
+      @tenants.push(new_tenant)
+    else
+      puts "sorry, that apartment is full. #{new_tenant} can't move in :("
+    end
   end
   def empty?
     @tenants.length < 1 ? true : false

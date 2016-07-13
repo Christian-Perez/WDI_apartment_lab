@@ -14,3 +14,4 @@ a1.move_in
 a1.move_in
 # puts a1.tenants
 puts a1.full?
+a1.move_in
